@@ -28,4 +28,4 @@ schedule_interval='@daily'
 
     )
 
-    task1.setDownstream(task2)
+    task1 >> task2
