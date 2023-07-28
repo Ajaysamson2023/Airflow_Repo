@@ -50,4 +50,5 @@ with DAG(dag_id="dag_version_1",
     task3 = PythonOperator(task_id="task2",
                            python_callable=dictionary,
                            dag=dag)
-    task1 >> [task2, task3]
+    task1 >> task2
+    task1 >> task3

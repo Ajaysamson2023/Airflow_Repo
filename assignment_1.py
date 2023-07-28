@@ -9,10 +9,10 @@ default_args = {
 
 
 def addition():
-    a = input("Enter the a:")
+    a = int(input("Enter the a:"))
     b = int(input("Enter the b:"))
     c = a + b
-    print("Sum of addition:", c)
+    print("Sum of addition two numbers:", c)
 
 
 def even_Number():
